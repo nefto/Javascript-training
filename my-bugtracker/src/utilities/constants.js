@@ -1,0 +1,1 @@
+export const TASK_COLUMNS = ['Task ID', 'Assigned', 'Descriptiobn', 'Comments', 'Status', 'Delivery', 'Related To'];
