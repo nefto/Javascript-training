@@ -1,0 +1,8 @@
+.TaskList{
+    overflow-x:auto;
+}
+
+.TaskListTable{
+    border-collapse: collapse;
+    width: 100%;
+}

@@ -1,22 +1,20 @@
 import React from 'react';
 
-import Row from './Row'
+import Row from './Row';
+import classes from './TaskListTable.css';
 
 const taskListTable = (props) => {
-    const rows = props.rows.map(row=>{
-        const rowArr=[];
-        for (const key in row) {
-                const element = row[key];
-                rowArr.push(element);
-        }
-        return <Row content = {rowArr}/>
+    const rows = props.rows.map(row => {
+        return <Row key={row.id} content={row} />
     });
-    const headerRow = props.headerRow.map(colName=>(<th>{colName}</th>))
+    const headerRow = <tr>{props.headerRow.map(colName => (<th key={colName}>{colName}</th>))}</tr>
     return (
-        <table>
-            {headerRow}
-            {rows}
-        </table>
+        <div className={classes.TaskList}>
+            <table className={classes.TakListTable}>
+                <thead>{headerRow}</thead>
+                <tbody>{rows}</tbody>
+            </table>
+        </div>
     );
 };
 
