@@ -3,4 +3,4 @@
     padding: 8px;
 }
 
-.TaskRow tr:nth-child(even){background-color: #f2f2f2}
+tr.TaskRow:nth-child(even){background-color: #f2f2f2}

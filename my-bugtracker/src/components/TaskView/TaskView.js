@@ -1,9 +1,13 @@
 import React from 'react';
 
+import Row from '../TaskListTable/Row';
+
 const taskView = (props) => {
+    
     return (
+      
         <div>
-            TaskView    
+            <Row content = {props.content} ></Row>   
         </div>
     );
 };

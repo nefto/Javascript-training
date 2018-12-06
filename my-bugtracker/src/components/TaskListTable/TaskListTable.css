@@ -6,3 +6,7 @@
     border-collapse: collapse;
     width: 100%;
 }
+
+.TaskListTable thead tr {
+    background-color: #a2f2f2;
+}
